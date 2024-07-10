@@ -5,8 +5,10 @@ import { useEffect } from 'react'
 
 // Type Imports
 import type { SystemMode } from '@core/types'
+
 // import CustomerReviews from './CustomerReviews'
 // Component Imports
+
 import HeroSection from './HeroSection'
 import UsefulFeature from './UsefulFeature'
 import OurTeam from './OurTeam'

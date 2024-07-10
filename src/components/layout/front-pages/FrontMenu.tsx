@@ -1,14 +1,18 @@
 'use client'
+
 // Component Imports
 // import DropdownMenu from './DropdownMenu'
 // React Imports
+
 import { useEffect } from 'react'
 
 // Next Imports
+
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
 // MUI Imports
+
 import Typography from '@mui/material/Typography'
 import Drawer from '@mui/material/Drawer'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -16,13 +20,16 @@ import type { Theme } from '@mui/material/styles'
 import IconButton from '@mui/material/IconButton'
 
 // Third-party Imports
+
 import classnames from 'classnames'
 
 // Type Imports
 // import type { Mode } from '@core/types'
 
 // Hook Imports
+
 import { useIntersection } from '@/hooks/useIntersection'
+
 type Props = {
   // mode: Mode
   isDrawerOpen: boolean
@@ -39,6 +46,7 @@ type WrapperProps = {
 
 const Wrapper = (props: WrapperProps) => {
   // Props
+
   const { children, isBelowLgScreen, className, isDrawerOpen, setIsDrawerOpen } = props
 
   if (isBelowLgScreen) {
@@ -68,10 +76,8 @@ const Wrapper = (props: WrapperProps) => {
 }
 
 const FrontMenu = (props: Props) => {
-  // Props
-  const { isDrawerOpen, setIsDrawerOpen} = props
+  const { isDrawerOpen, setIsDrawerOpen } = props
 
-  // Hooks
   const pathname = usePathname()
   const isBelowLgScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'))
   const { intersections } = useIntersection()
@@ -80,7 +86,6 @@ const FrontMenu = (props: Props) => {
     if (!isBelowLgScreen && isDrawerOpen) {
       setIsDrawerOpen(false)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isBelowLgScreen])
 
   return (
@@ -140,6 +145,7 @@ const FrontMenu = (props: Props) => {
       >
         Contact us
       </Typography>
+
       {/* <DropdownMenu
         mode={mode}
         isBelowLgScreen={isBelowLgScreen}

@@ -1,29 +1,37 @@
 'use client'
 
 // React Imports
+
 import { useState } from 'react'
 
 // Next Imports
+
 import Link from 'next/link'
 import Image from 'next/image'
 
 // MUI Imports
 // import Button from '@mui/material/Button'
+
 import IconButton from '@mui/material/IconButton'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
 import type { Theme } from '@mui/material/styles'
 
 // Third-party Imports
+
 import classnames from 'classnames'
 
 // Type Imports
+
 import type { Mode } from '@core/types'
 
 // Component Imports
 // import Logo from '@components/layout/shared/Logo'
+
+
 import ModeDropdown from '@components/layout/shared/ModeDropdown'
 import FrontMenu from './FrontMenu'
+
 // import CustomIconButton from '@core/components/mui/IconButton'
 
 // Util Imports
@@ -85,6 +93,7 @@ const Header = ({ mode }: { mode: Mode }) => {
           )}
           <div className='flex items-center gap-2 sm:gap-4'>
             <ModeDropdown />
+
             {/* {isBelowLgScreen ? (
               <CustomIconButton
                 component={Link}
@@ -107,6 +116,7 @@ const Header = ({ mode }: { mode: Mode }) => {
               >
                 Purchase Now
               </Button>
+              
             )} */}
           </div>
         </div>
