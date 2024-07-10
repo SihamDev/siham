@@ -1,5 +1,6 @@
 'use client'
-
+// Component Imports
+// import DropdownMenu from './DropdownMenu'
 // React Imports
 import { useEffect } from 'react'
 
@@ -18,16 +19,12 @@ import IconButton from '@mui/material/IconButton'
 import classnames from 'classnames'
 
 // Type Imports
-import type { Mode } from '@core/types'
+// import type { Mode } from '@core/types'
 
 // Hook Imports
 import { useIntersection } from '@/hooks/useIntersection'
-
-// Component Imports
-import DropdownMenu from './DropdownMenu'
-
 type Props = {
-  mode: Mode
+  // mode: Mode
   isDrawerOpen: boolean
   setIsDrawerOpen: (open: boolean) => void
 }
@@ -72,7 +69,7 @@ const Wrapper = (props: WrapperProps) => {
 
 const FrontMenu = (props: Props) => {
   // Props
-  const { isDrawerOpen, setIsDrawerOpen, mode } = props
+  const { isDrawerOpen, setIsDrawerOpen} = props
 
   // Hooks
   const pathname = usePathname()

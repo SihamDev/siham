@@ -8,7 +8,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // MUI Imports
-import Button from '@mui/material/Button'
+// import Button from '@mui/material/Button'
 import IconButton from '@mui/material/IconButton'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import useScrollTrigger from '@mui/material/useScrollTrigger'
@@ -21,10 +21,10 @@ import classnames from 'classnames'
 import type { Mode } from '@core/types'
 
 // Component Imports
-import Logo from '@components/layout/shared/Logo'
+// import Logo from '@components/layout/shared/Logo'
 import ModeDropdown from '@components/layout/shared/ModeDropdown'
 import FrontMenu from './FrontMenu'
-import CustomIconButton from '@core/components/mui/IconButton'
+// import CustomIconButton from '@core/components/mui/IconButton'
 
 // Util Imports
 import { frontLayoutClasses } from '@layouts/utils/layoutClasses'

@@ -15,7 +15,6 @@ import type { Mode } from '@core/types'
 
 // Component Imports
 import Link from '@components/Link'
-import Logo from '@components/layout/shared/Logo'
 import CustomTextField from '@core/components/mui/TextField'
 
 // Hooks Imports
@@ -48,7 +47,8 @@ const Footer = ({ mode }: { mode: Mode }) => {
                   <Logo color='var(--mui-palette-common-white)' />
                 </Link> */}
                 <Typography color='white' className='md:max-is-[390px] opacity-[78]'>
-                Voice AI for Business. NeloVoice lets business owners build and deploy voice agents in minutes without code.
+                  Voice AI for Business. NeloVoice lets business owners build and deploy voice agents in minutes without
+                  code.
                 </Typography>
                 <div className='flex items-end'>
                   <CustomTextField
@@ -171,25 +171,22 @@ const Footer = ({ mode }: { mode: Mode }) => {
             frontCommonStyles.layoutSpacing
           )}
         >
-          <p className='text-white text-[13px]'>
-  {`© ${new Date().getFullYear()} NeloVoice. All rights reserved.`}
-</p>
-
+          <p className='text-white text-[13px]'>{`© ${new Date().getFullYear()} NeloVoice. All rights reserved.`}</p>
 
           <div className='flex gap-6 items-center'>
-            <IconButton component={Link} size='small' href='https://github.com/pixinvent' target='_blank'>
+            {/* <IconButton component={Link} size='small' href='https://github.com/pixinvent' target='_blank'>
               <i className='tabler-brand-github-filled text-white text-lg' />
             </IconButton>
             <IconButton component={Link} size='small' href='https://www.facebook.com/pixinvents/' target='_blank'>
               <i className='tabler-brand-facebook-filled text-white text-lg' />
             </IconButton>
-            <IconButton component={Link} size='small' href='https://x.com/pixinvents' target='_blank'>
-              <i className='tabler-brand-twitter-filled text-white text-lg' />
-            </IconButton>
+            <IconButton component={Link} size='small' href='https://www.linkedin.com/company/nelovoice' target='_blank'>
+              <i className='tabler-brand-linkedin-filled text-white text-lg' />
+            </IconButton> */}
             <IconButton
               component={Link}
               size='small'
-              href='https://www.youtube.com/channel/UClOcB3o1goJ293ri_Hxpklg'
+              href='https://www.youtube.com/channel/UCCWl3zfou9AKGQqUKwc-1dA'
               target='_blank'
             >
               <i className='tabler-brand-youtube-filled text-white text-lg' />

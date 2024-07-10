@@ -29,15 +29,15 @@ const HeroSection = ({ mode }: { mode: SystemMode }) => {
   // Vars
   const dashboardImageLight = '/images/front-pages/landing-page/dash1.png'
   const dashboardImageDark = '/images/front-pages/landing-page/dash.png'
-  const elementsImageLight = '/images/front-pages/landing-page/hero-elements-light.png'
-  const elementsImageDark = '/images/front-pages/landing-page/hero-elements-dark.png'
+  // const elementsImageLight = '/images/front-pages/landing-page/hero-elements-light.png'
+  // const elementsImageDark = '/images/front-pages/landing-page/hero-elements-dark.png'
+  // const elementsImage = useImageVariant(mode, elementsImageLight, elementsImageDark)
   const heroSectionBgLight = '/images/front-pages/landing-page/hero-bg-light.png'
   const heroSectionBgDark = '/images/front-pages/landing-page/hero-bg-dark.png'
 
   // Hooks
   const { mode: muiMode } = useColorScheme()
   const dashboardImage = useImageVariant(mode, dashboardImageLight, dashboardImageDark)
-  // const elementsImage = useImageVariant(mode, elementsImageLight, elementsImageDark)
   const heroSectionBg = useImageVariant(mode, heroSectionBgLight, heroSectionBgDark)
 
   const _mode = (muiMode === 'system' ? mode : muiMode) || mode
