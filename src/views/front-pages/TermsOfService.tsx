@@ -27,7 +27,7 @@ const TermsOfService: React.FC = () => {
             conditions of these Terms of Service, you will not access, browse, or otherwise use the Service.
           </p>
           <p className='text-gray-700'>
-            NELOVOICE may change these Terms of Service from time to time by providing thirty (30) days' prior notice
+            NELOVOICE may change these Terms of Service from time to time by providing thirty (30) daysn prior notice
             either by emailing the email address associated with your account or by posting a notice on the Site. The
             revised terms and conditions will become effective upon the later of any renewal of your subscription (if
             applicable) or thirty (30) days after we post or send you notice of such changes, and if you use the Service
