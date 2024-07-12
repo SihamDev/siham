@@ -31,16 +31,16 @@ export const getSystemMode = (): SystemMode => {
   const cookieStore = cookies()
   const mode = getMode()
 
-  const colorPrefCookie = (cookieStore.get('colorPref')?.value || 'light') as SystemMode
+  const colorPrefCookie = (cookieStore.get('colorPref')?.value || 'dark') as SystemMode
 
-  return (mode === 'system' ? colorPrefCookie : mode) || 'light'
+  return (mode === 'system' ? colorPrefCookie : mode) || 'dark'
 }
 
 export const getServerMode = () => {
   const mode = getMode()
   const systemMode = getSystemMode()
 
-  return mode === 'system' ? systemMode : mode
+  return mode === 'dark' ? systemMode : mode
 }
 
 export const getSkin = () => {

@@ -94,7 +94,7 @@ const ContactUs = () => {
                     <div>
                       <Typography>Email</Typography>
                       <Typography color='text.primary' className='font-medium'>
-                        example@gamil.com
+                      contact@nelovoice.com
                       </Typography>
                     </div>
                   </div>

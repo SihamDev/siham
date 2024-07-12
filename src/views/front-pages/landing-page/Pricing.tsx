@@ -30,15 +30,24 @@ const pricingPlans = [
     title: 'Essential Plan',
     img: '/images/front-pages/landing-page/pricing-basic.png',
     monthlyPay: 39,
-    annualPay: 390, // 10 * 39
+    annualPay: 36, // 10 * 39
     perYearPay: 468, // 12 * 39
-    features: ['Local phone number setup', 'Basic call routing', 'Three Functions Setup', 'Email Support', 'CRM Integration', 'Up to 100 minutes per month', 'No Invite Team members', 'Limited support hours'],
+    features: [
+      'Local phone number setup',
+      'Basic call routing',
+      'Three Functions Setup',
+      'Email Support',
+      'CRM Integration',
+      'Up to 100 minutes per month',
+      'No Invite Team members',
+      'Limited support hours'
+    ]
   },
   {
     title: 'Professional Plan',
     img: '/images/front-pages/landing-page/pricing-team.png',
     monthlyPay: 199,
-    annualPay: 1990, // 10 * 199
+    annualPay: 190, // 10 * 199
     perYearPay: 2388, // 12 * 199
     features: [
       'Local phone number setup',
@@ -49,13 +58,13 @@ const pricingPlans = [
       'Advanced call routing by name',
       'Up to 1000 minutes per month',
       'Invite Team members'
-    ],
+    ]
   },
   {
     title: 'Enterprise Plan',
     img: '/images/front-pages/landing-page/pricing-enterprise.png',
     monthlyPay: 1400,
-    annualPay: 14000, // 10 * 1400
+    annualPay: 1390, // 10 * 1400
     perYearPay: 16800, // 12 * 1400
     features: [
       'Everything in Professional Plan',
@@ -66,10 +75,9 @@ const pricingPlans = [
       'Custom integrations and API access',
       'Dedicated account manager',
       '24/7 premium support'
-    ],
+    ]
   }
 ]
-
 
 const PricingPlan = () => {
   // States
@@ -109,7 +117,7 @@ const PricingPlan = () => {
               </Typography>
             </div>
             <Typography className='text-center'>
-            Simple and Affordable Pricing
+              Simple and Affordable Pricing
               <br />
               Choose the best plan to fit your needs.
             </Typography>

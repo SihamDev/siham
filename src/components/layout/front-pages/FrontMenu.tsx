@@ -31,7 +31,7 @@ import classnames from 'classnames'
 import { useIntersection } from '@/hooks/useIntersection'
 
 type Props = {
-  
+
   // mode: Mode
 
   isDrawerOpen: boolean

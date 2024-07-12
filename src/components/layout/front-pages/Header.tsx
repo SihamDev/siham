@@ -10,7 +10,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // MUI Imports
-// import Button from '@mui/material/Button'
+import Button from '@mui/material/Button'
 
 import IconButton from '@mui/material/IconButton'
 import useMediaQuery from '@mui/material/useMediaQuery'
@@ -29,7 +29,8 @@ import type { Mode } from '@core/types'
 // import Logo from '@components/layout/shared/Logo'
 
 
-import ModeDropdown from '@components/layout/shared/ModeDropdown'
+// import ModeDropdown from '@components/layout/shared/ModeDropdown'
+
 import FrontMenu from './FrontMenu'
 
 // import CustomIconButton from '@core/components/mui/IconButton'
@@ -92,32 +93,54 @@ const Header = ({ mode }: { mode: Mode }) => {
             </div>
           )}
           <div className='flex items-center gap-2 sm:gap-4'>
-            <ModeDropdown />
+            {/* <ModeDropdown /> */}
 
-            {/* {isBelowLgScreen ? (
-              <CustomIconButton
-                component={Link}
-                variant='contained'
-                href='https://1.envato.market/vuexy_admin'
-                color='primary'
-                target='_blank'
-              >
-                <i className='tabler-shopping-cart text-xl' />
-              </CustomIconButton>
-            )
-            : (
+            {
+
+            // isBelowLgScreen ? (
+            //   <CustomIconButton
+            //     component={Link}
+            //     variant='contained'
+            //     href='https://1.envato.market/vuexy_admin'
+            //     color='primary'
+            //     target='_blank'
+            //   >
+            //     <i className='tabler-shopping-cart text-xl' />
+            //   </CustomIconButton>
+            // )
+            // :
+            // (
+
               <Button
                 component={Link}
                 variant='contained'
-                href='/front-pages/pricing'
-                startIcon={<i className='tabler-shopping-cart text-xl' />}
+                href='#'
+
+                // startIcon={<i className='tabler-shopping-cart text-xl' />}
+
                 className='whitespace-nowrap'
                 target='_blank'
               >
-                Purchase Now
+                Sing in
               </Button>
-              
-            )} */}
+
+
+            // )
+            }{
+              <Button
+              component={Link}
+              variant='contained'
+              href='#'
+
+              // startIcon={<i className='tabler-shopping-cart text-xl' />}
+
+              className='whitespace-nowrap'
+              target='_blank'
+            >
+              Sing up
+            </Button>
+
+            }
           </div>
         </div>
       </div>

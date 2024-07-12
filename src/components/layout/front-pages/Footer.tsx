@@ -84,15 +84,15 @@ const Footer = ({ mode }: { mode: Mode }) => {
             </Grid>
             <Grid item xs={12} sm={3} lg={2}>
               <Typography color='white' className='font-medium mbe-6 opacity-[92]'>
-                Pages
+              Contact & Help
               </Typography>
               <div className='flex flex-col gap-4'>
-                <Typography component={Link} href='/front-pages/pricing' color='white' className='opacity-[78]'>
-                  Pricing
+                <Typography component={Link} href='/front-pages/landing-page#contact-us' color='white' className='opacity-[78]'>
+                Open Support Ticket
                 </Typography>
-                <Link href='/front-pages/payment' className='flex items-center gap-[10px]'>
+                <Link href='/front-pages/landing-page#contact-us' className='flex items-center gap-[10px]'>
                   <Typography color='white' className='opacity-[78]'>
-                    Payment
+                  Invest
                   </Typography>
                   <Chip label='New' color='primary' size='small' />
                 </Link>
@@ -111,14 +111,15 @@ const Footer = ({ mode }: { mode: Mode }) => {
             </Grid>
             <Grid item xs={12} sm={3} lg={2}>
               <Typography color='white' className='font-medium mbe-6 opacity-[92]'>
-                Products
+              Terms
               </Typography>
               <div className='flex flex-col gap-4'>
-                <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[78]'>
-                  Page builder
+                <Typography component={Link} href='/front-pages/Terms' color='white' className='opacity-[78]'>
+                Terms of Use
                 </Typography>
-                <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[78]'>
-                  Admin Dashboards
+
+                <Typography component={Link} href='/front-pages/Privacy' color='white' className='opacity-[78]'>
+                Privacy Policy
                 </Typography>
                 {/* <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[78]'>
                   UI Kits
@@ -126,6 +127,19 @@ const Footer = ({ mode }: { mode: Mode }) => {
                 <Typography component={Link} href='/front-pages/landing-page' color='white' className='opacity-[78]'>
                   Illustrations
                 </Typography> */}
+              </div>
+            </Grid>
+            <Grid item xs={12} sm={3} lg={2}>
+              <Typography color='white' className='font-medium mbe-6 opacity-[92]'>
+              Pages
+              </Typography>
+              <div className='flex flex-col gap-4'>
+                <Typography component={Link} href='/front-pages/landing-page#Home' color='white' className='opacity-[78]'>
+                Home
+                </Typography>
+                <Typography component={Link} href='/front-pages/landing-page#features' color='white' className='opacity-[78]'>
+                Features
+                </Typography>
               </div>
             </Grid>
             {/* <Grid item xs={12} sm={6} lg={3}>
@@ -174,14 +188,14 @@ const Footer = ({ mode }: { mode: Mode }) => {
           <p className='text-white text-[13px]'>{`© ${new Date().getFullYear()} NeloVoice. All rights reserved.`}</p>
 
           <div className='flex gap-6 items-center'>
-            {/* <IconButton component={Link} size='small' href='https://github.com/pixinvent' target='_blank'>
+            <IconButton component={Link} size='small' href='https://github.com/pixinvent' target='_blank'>
               <i className='tabler-brand-github-filled text-white text-lg' />
             </IconButton>
             <IconButton component={Link} size='small' href='https://www.facebook.com/pixinvents/' target='_blank'>
               <i className='tabler-brand-facebook-filled text-white text-lg' />
             </IconButton>
-            <IconButton component={Link} size='small' href='https://www.linkedin.com/company/nelovoice' target='_blank'>
-              <i className='tabler-brand-linkedin-filled text-white text-lg' />
+            {/* <IconButton component={Link} size='small' href='https://www.linkedin.com/company/nelovoice' target='_blank'>
+              <i className='tabler-brand-instagram-filled text-white text-lg' />
             </IconButton> */}
             <IconButton
               component={Link}
